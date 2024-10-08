@@ -40,6 +40,7 @@ public class Student {
 	private String studentClass;
 	private String studentDeegriYear;
 	private String studentCollegeMode;
-	private String studentFees;
+	private float studentFees;
+
 
 }

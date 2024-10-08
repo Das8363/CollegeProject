@@ -6,6 +6,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Database</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
 <style type="text/css">
 .table-container {
 	background-image:
@@ -13,7 +18,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 2000px;
+	width: 2120px;
 	height: 100%;
 	background-position: center;
 	color: red;
@@ -26,7 +31,11 @@
 		document.action.submit();
 	}
 	function fees() {
-		document.fn.action="/fees";
+		document.fn.action = "/fees";
+		document.action.submit();
+	}
+	function batch() {
+		document.fn.action="/batch";
 		document.action.submit();
 	}
 </script>
@@ -35,9 +44,9 @@
 <body>
 
 	<section class="table-container" id="view">
-		<h1 style="color: white; text: center;">Student Info</h1>
+		<h1 style="color: white;text-align:center">Student Info</h1>
 		<form name="fn">
-			<table class="table-border bordered">
+			<table class="table-bordered ">
 				<thead>
 					<tr>
 						<th>Id</th>
@@ -88,8 +97,9 @@
 							<td><input type="radio" name="studentId"
 								value="${stu.studentId }"></td>
 							<td>
-								<div class="d-flex-justify-content-between pt-2 border border-success">
-									<button class="btn btn-warning">Batch</button>
+								<div
+									class="d-flex-justify-content-between pt-2 border border-success">
+									<button class="btn btn-warning"onClick="batch(bo)">Batch</button>
 									<button class="btn btn-primary" onClick="fees()">Fees</button>
 									<button class="btn btn-danger" onClick="remove()">Remove</button>
 								</div>

@@ -16,4 +16,11 @@ public interface StudentService {
 
 	public List<Student> viewAllData(Student st);
 
+	public Student getsingleStudent(int studentId);
+
+	public void payfees(int studentId, float amount);
+
+	public void changebatch(int studentId, String batchNumber);
+	
+
 }
