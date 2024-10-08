@@ -14,7 +14,7 @@
 <body>
 	<div class="d-flex justify-content-center align-center">
 		<div class="w-50 align-middle border border-info border-3 mt-2"
-			style="height: 570px">
+			style="height: 1022px">
 			<h6 class="p-3 text-primary">
 				A <u>Installment Details:-</u>
 			</h6>
@@ -28,17 +28,8 @@
 
 						</tr>
 						<tr class="table-primary fs-6">
-							<th>Student First Name</th>
-							<td>${stu.studentFirstName}</td>
-						</tr>
-						<tr class="table-primary fs-6">
-							<th>Student Middle Name</th>
-							<td>${stu.studentMiddleName}</td>
-						</tr>
-						<tr class="table-primary fs-6">
-							<th>Student Last Name</th>
-							<td>${stu.studentLastName}</td>
-
+							<th>Student Full Name</th>
+							<td>${stu.studentFullName}</td>
 						</tr>
 						<tr class="table-primary fs-6">
 							<th>Student DOB</th>

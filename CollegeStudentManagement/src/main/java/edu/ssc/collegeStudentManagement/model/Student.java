@@ -19,9 +19,7 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentId;
-	private String studentFirstName;
-	private String studentMiddleName;
-	private String studentLastName;
+	private String studentFullName;
 	private String studentDateOfBirth;
 	private String gender;
 	@Column(unique = true)

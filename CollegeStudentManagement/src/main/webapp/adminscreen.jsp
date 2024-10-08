@@ -66,39 +66,12 @@
 										<div class="row">
 											<div class="col-md-10 mb-2">
 												<div data-mdb-input-init class="form-outline">
-													<label class="form-label" for="form3Example1m1">Student
+													<label class="form-label" for="form3Example1m1">Student Full
 														Name </label><input type="text" id="form3Example1m1"
 														class="form-control form-control-lg"
-														name="studentFirstName" placeholder="Enter Student  Name" />
-
+														name="studentFullName" placeholder="Enter Student Full Name" />
 												</div>
 											</div>
-											<div class="row">
-												<div class="col-md-10 mb-2">
-													<div data-mdb-input-init class="form-outline">
-														<label class="form-label" for="form3Example1m1">Middle
-															Name </label><input type="text" id="form3Example1m1"
-															class="form-control form-control-lg"
-															name="studentMiddleName"
-															placeholder="Enter Student Father Name" />
-
-													</div>
-												</div>
-											</div>
-
-
-											<div class="col-md-10 mb-2">
-												<div data-mdb-input-init class="form-outline">
-													<label class="form-label" for="form3Example1n">Last
-														name</label><input type="text" id="form3Example1n"
-														class="form-control form-control-lg"
-														name="studentLastName"
-														placeholder="Enter Student Last Name" />
-												</div>
-											</div>
-										</div>
-
-
 										<div class="col-md-10 mb-2">
 											<div data-mdb-input-init class="form-outline">
 												<label class="form-label" for="form3Example1n1">DateOfBirth</label><input

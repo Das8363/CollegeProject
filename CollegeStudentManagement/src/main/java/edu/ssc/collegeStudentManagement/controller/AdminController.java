@@ -57,37 +57,20 @@ public class AdminController {
 		return "adminscreen";
 
 	}
+
 	@RequestMapping("/fees")
-	public String onFees(@RequestParam int studentId,Model m) {
-		Student student=ss.getsingleStudent(studentId);
-		m.addAttribute("stu", student);
-		return"fees";
-	}
-	@RequestMapping("/payfees")
-	public String addinstallment(@RequestParam int studentId,float amount,Model m) {
-		ss.payfees(studentId,amount);
-		List<Student> list = ss.viewAllData();
-		m.addAttribute("data", list);
-		return"adminscreen";
-		
-	}
-	@RequestMapping("/batch")
-	public String onBatch(@RequestParam int studentId, Model m) {
+	public String onFees(@RequestParam int studentId, Model m) {
 		Student student = ss.getsingleStudent(studentId);
 		m.addAttribute("stu", student);
-
-		return "batch";
+		return "fees";
 	}
 
-	@RequestMapping("/changebatch")
-	public String batchchanging(@RequestParam int studentId,@RequestParam String batchNumber,Model m ) {
-		ss.changebatch(studentId,batchNumber);
+	@RequestMapping("/payfees")
+	public String addinstallment(@RequestParam int studentId, float amount, Model m) {
+		ss.payfees(studentId, amount);
 		List<Student> list = ss.viewAllData();
 		m.addAttribute("data", list);
-		return"adminscreen";
-		
+		return "adminscreen";
+
 	}
-		
-	
-	
 }
