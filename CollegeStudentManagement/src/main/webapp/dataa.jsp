@@ -18,7 +18,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 2010px;
-	height: 100%;
+	height: auto;
 	background-position: center;
 	color: red;
 }
